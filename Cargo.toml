@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/avpe-assets", "crates/avpe-tools", "crates/avpe-pc"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+
+[workspace.dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+clap = { version = "4", features = ["derive"] }
+
